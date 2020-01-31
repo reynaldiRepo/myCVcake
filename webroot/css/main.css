@@ -1,0 +1,196 @@
+@font-face {
+	font-family: themeFont;
+	src: url("../font/FrontPageNeue.otf");
+}
+
+
+@font-face {
+	font-family: fontPage;
+	src: url("../font/FrontPageNeue.otf");
+}
+
+@font-face {
+	font-family: iscontent;
+	src: url("../font/PontanoSans-Regular.ttf");
+}
+
+*{
+	font-family: iscontent;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: fontPage;
+}
+
+.bor-r {
+	border-right: 0.05em solid rgba(10, 53, 254, 0.2)
+}
+
+.frontText {
+	font-family: fontPage;
+	font-size: 46px;
+}
+
+.subText {
+	font-family: fontPage;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.blue {
+	font-family: fontPage;
+	color: #6EC3C4;
+}
+
+hr {
+	background-color: #6EC3C4;
+	opacity: 0.2;
+}
+
+.bg-blue {
+	background-color: #6EC3C4;
+}
+
+.contenttext {
+	font-family: iscontent;
+	font-weight: 500;
+}
+
+.isShadow {
+	box-shadow: 2px 4px 0px 1px grey;
+	border: 1px solid #60ACAD;
+}
+
+.img-90 {
+	transform: rotateZ(90deg);
+	position: relative;
+	width: 90%;
+	opacity: 0.8;
+}
+
+.img-grey {
+	filter: grayscale(80%);
+	border-radius: 10px;
+	width: 80%;
+}
+
+.listing {
+	list-style-type: none;
+}
+
+.img {
+	background-image: url("../img/2.jpg");
+	filter: grayscale(20%);
+	height: 400px;
+	width: 100%;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.sosmed-place {
+	position: relative;
+	top: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 8%;
+	width: 100%;
+	background-color: grey;
+	opacity: 0.76;
+	color: white;
+	padding: 2%;
+}
+
+.listFlex {
+	display: inline-flex;
+	list-style-type: none;
+}
+
+.sosmed-title {
+	position: relative;
+	top: 5%;
+	height: 8%;
+	width: 100%;
+	background-color: black;
+}
+
+.buttonforgame {
+	position: relative;
+	top: 68%;
+}
+
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/Preloader_3.gif) center no-repeat #fff;
+}
+
+.forGame {
+	-webkit-animation-name: example;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 4s;
+	/* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	border-radius: 360px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(-3deg);
+	}
+
+	50% {
+		transform: rotateZ(3deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+/* Standard syntax */
+@keyframes example {
+	0% {
+		transform: rotateZ(0deg);
+	}
+
+	25% {
+		transform: rotateZ(-3deg);
+	}
+
+	50% {
+		transform: rotateZ(3deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
